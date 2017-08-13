@@ -1,10 +1,15 @@
 # webApp2
+
 仿豆瓣app：
+
 使用bower包管理器和gulp构建工具
+
 文件夹：src:未经过任何处理的开发代码
        build:程序运行代码
        dist:经过丑化，合并的代码
+       
 使用框架，angular1.6和angular-ui-router
+
 使用jsonp配合后台PHP代码进行跨域数据获取
 
 在src文件夹中：
