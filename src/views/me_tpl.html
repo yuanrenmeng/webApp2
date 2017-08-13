@@ -1,0 +1,21 @@
+<div class="me">
+   <div class="me_top">
+       <img ng-src="{{listDate.author
+.avatar}}">
+       <h3 ng-bind="listDate.author
+.name"></h3>
+       <p ng-bind="listDate.author
+.editor_notes"></p>
+       <button ng-form="listDate.author
+.url">去豆瓣主页</button>
+   </div>
+    <div class="me_content" ng-repeat="list in listDate.posts">
+        <span ng-bind="list.name"></span>
+        <h3 ng-bind="list.title"></h3>
+        <div class="style">
+            <p ng-bind="list.abstract"></p>
+            <!--图片路径正确  只是豆瓣设置这里的图片禁止访问而已-->
+            <img ng-src="{{list.thumbs[0].small.url}}"/>
+        </div>
+    </div>
+</div>

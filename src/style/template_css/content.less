@@ -1,0 +1,32 @@
+.content{
+  .pt(64);
+  .content_list{
+    border-top: 1px solid #ccc;
+    border-right:1px solid #ccc;;
+    text-align: center;
+    width:50%;
+    float: left;
+    .h(150);
+    img{
+      .w(54);
+      .h(54);
+      .mt(20);
+      vertical-align: middle;
+    }
+    h3{
+      .fs(18);
+      color:lightseagreen;
+      .mt(10);
+    }
+    span{
+      .fs(14);
+      color:#ccc;
+      text-overflow:ellipsis;
+      display: block;
+      .mt(10);
+    }
+  }
+  .content_list:nth-of-type(2n){
+    border-right:none;;
+  }
+}

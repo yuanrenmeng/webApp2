@@ -1,0 +1,12 @@
+<div class="tabBar">
+    <ul>
+        <li  ng-click="changeNav('home')" ng-class="{active:type=='home'}">
+            <img ng-src="images/{{type=='home'?'homeSel.png':'home_icon.png'}}" /><p>首页</p></li>
+        <li  ng-click="changeNav('author')" ng-class="{active:type=='author'}">
+            <img src="images/{{type=='author'?'authorSel.png':'author_icon.png'}}" alt=""><p>作者</p></li>
+        <li  ng-click="changeNav('content')" ng-class="{active:type=='content'}">
+            <img src="images/{{type=='content'?'contentSel.png':'content_icon.png'}}" alt=""><p>栏目</p></li>
+        <li  ng-click="changeNav('my')" ng-class="{active:type=='my'}">
+            <img src="images/{{type=='my'?'mySel.png':'my_icon.png'}}" alt=""><p>我的</p></li>
+    </ul>
+</div>

@@ -1,0 +1,24 @@
+<div class="author">
+   <div class="tuijian">
+       <h3>本周推荐</h3>
+       <div class="author_list" ng-repeat="list in listDate">
+           <!--<img src="https://img1.doubanio.com/icon/u1518879-159.jpg" alt="">-->
+           <img ng-src="{{list.avatar}}">
+           <div class="a_left">
+               <h4 ng-bind="list.name"></h4>
+               <p ng-bind="list.editor_notes"></p>
+           </div>
+       </div>
+   </div>
+    <div class="tuijian">
+        <h3>热门作者</h3>
+        <div class="author_list" ng-repeat="list in listDate">
+            <!--<img src="https://img1.doubanio.com/icon/u1518879-159.jpg" alt="">-->
+            <img ng-src="{{list.avatar}}">
+            <div class="a_left">
+                <h4 ng-bind="list.name"></h4>
+                <p ng-bind="list.editor_notes"></p>
+            </div>
+        </div>
+    </div>
+</div>

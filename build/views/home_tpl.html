@@ -1,0 +1,24 @@
+<div class="list_content" >
+    <div ng-repeat="list in listDate">
+        <span ng-bind="list.column.name"></span>
+        <h3 ng-bind="list.title"></h3>
+        <div class="style1" ng-if="list.display_style == '10002'">
+            <p ng-bind="list.abstract"></p>
+            <!--<img src="../images/post_1.png"/>-->
+            <img ng-src="{{list.author.avatar}}">
+        </div>
+        <div class="style2" ng-if="list.display_style == '10001'">
+            <p ng-bind="list.abstract"></p>
+        </div>
+        <div class="style3" ng-if="list.display_style == '10003'">
+            <ul>
+                <!--<li><img ng-src="{{list.thumbs[0].small.url}}"></li>-->
+                <!--<li><img ng-src="{{list.thumbs[1].small.url}}"></li>-->
+                <!--<li><img ng-src="{{list.thumbs[2].small.url}}"></li>-->
+                <li><img src="../images/post_1.png">
+                <li><img src="../images/post_2.png">
+                <li><img src="../images/post_3.png">
+            </ul>
+        </div>
+    </div>
+</div>
